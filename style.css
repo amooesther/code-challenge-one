@@ -8,5 +8,101 @@
 
 body{
 font-family: myFonts;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: hsl(234, 29%, 20%);
 
+}
+.container{
+    display: flex;
+    width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.left-items{
+    width: 60%;
+}
+.right-items img{
+    width: 100%;
+}
+ul{
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+li{
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+    
+
+}
+button{
+    font-family: inherit;
+    margin-top: 10px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color:hsl(235, 18%, 26%) ;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.hide{
+    display: none;
+}
+.container2{
+    background: white;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+.container2 h1{
+    font-size: 40px;
+}
+.icon-container2{
+    width: 50px;
+}
+.container2 button{
+    width: 100%;
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    
+.left-items{
+    width: 100%;
+}
+
+.right-items img{
+    width: 100%;
+}
+.right img{
+    content: url(./design/mobile-design.jpg);
+}
+form{
+    width: 90%;
+}
 }
